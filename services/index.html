@@ -1,11 +1,36 @@
-  <section id="services">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>services — lehn.dev</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <nav>
+    <a href="/" class="nav-logo">lehn.dev</a>
+    <ul class="nav-links">
+      <li><a href="/services">services</a></li>
+      <li><a href="/projects">projects</a></li>
+      <li><a href="/#about">about</a></li>
+      <li><a href="/#contact">contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="services" style="border-top: none;">
     <div class="section-header">
       <span class="section-label">01</span>
       <h2>// hosted services</h2>
     </div>
     <div class="services-grid">
 
-      <a href="https://files.lehn.dev" class="service-card">
+      <a href="https://photos.lehn.dev" class="service-card">
         <div class="service-arrow">↗</div>
         <div class="service-name">photos.lehn.dev</div>
         <div class="service-desc">Immich instance. A drop-in Google Photos replacement.</div>
@@ -38,8 +63,25 @@
       <a href="https://e3s1pro.lehn.dev" class="service-card">
         <div class="service-arrow">↗</div>
         <div class="service-name">e3s1pro.lehn.dev</div>
-        <div class="service-desc">A modified Creality Ender 3 S1 Pro, with a BTT SKR Mini E3 V3 board and a Raspberry Pi for klipper. <a href=https://oe.ink/l/iVdp8qfGTP>Public live link (down as of 5/11/2026)</a><div>
+        <div class="service-desc">A modified Creality Ender 3 S1 Pro, with a BTT SKR Mini E3 V3 board and a Raspberry Pi for Klipper. <a href="https://oe.ink/l/iVdp8qfGTP" style="color: var(--accent);">Public live link</a> (down as of 5/11/2026).</div>
       </a>
 
     </div>
   </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-contact">
+        <a href="mailto:you@lehn.dev">you@lehn.dev</a>
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">github</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">linkedin</a>
+      </div>
+      <div class="footer-copy">lehn.dev &mdash; <span id="year"></span></div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="/js/main.js"></script>
+</body>
+</html>

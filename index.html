@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lehn.dev</title>
+
+  <!-- open graph / social preview -->
+  <meta property="og:title" content="lehn.dev">
+  <meta property="og:description" content="Maker. Builder. Engineer.">
+  <meta property="og:image" content="/assets/img/og-image.png">
+  <meta property="og:url" content="https://lehn.dev">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <nav>
+    <a href="/" class="nav-logo">lehn.dev</a>
+    <ul class="nav-links">
+      <li><a href="#services">services</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ─── hero ─────────────────────────────────────────── -->
+  <div class="hero">
+    <div class="hero-label">available for work</div>
+    <h1>maker.<br>builder.<br><span>engineer</span>.<span class="cursor"></span></h1>
+    <p class="hero-bio">
+      I build things — in software, in plastic, and in filament. Self-hosted
+      infrastructure, physical projects, and whatever else seems interesting.
+      Based wherever my 3D printer is.
+    </p>
+    <div class="hero-cta">
+      <a href="#about" class="btn btn-primary">view résumé</a>
+      <a href="#projects" class="btn btn-ghost">see projects</a>
+    </div>
+  </div>
+
+  <!-- ─── services ─────────────────────────────────────── -->
+  <section id="services">
+    <div class="section-header">
+      <span class="section-label">01</span>
+      <h2>// hosted services</h2>
+    </div>
+    <div class="services-grid">
+
+      <!-- Add / remove cards to match your actual subdomains -->
+
+      <a href="https://git.lehn.dev" class="service-card">
+        <div class="service-arrow">↗</div>
+        <div class="service-name">git.lehn.dev</div>
+        <div class="service-desc">Self-hosted Gitea instance. Code, repos, mirrors.</div>
+      </a>
+
+      <a href="https://media.lehn.dev" class="service-card">
+        <div class="service-arrow">↗</div>
+        <div class="service-name">media.lehn.dev</div>
+        <div class="service-desc">Jellyfin media server. Films, shows, music.</div>
+      </a>
+
+      <a href="https://notes.lehn.dev" class="service-card">
+        <div class="service-arrow">↗</div>
+        <div class="service-name">notes.lehn.dev</div>
+        <div class="service-desc">Obsidian publish or personal wiki.</div>
+      </a>
+
+      <a href="https://files.lehn.dev" class="service-card">
+        <div class="service-arrow">↗</div>
+        <div class="service-name">files.lehn.dev</div>
+        <div class="service-desc">Nextcloud / file sync and sharing.</div>
+      </a>
+
+      <a href="https://dash.lehn.dev" class="service-card">
+        <div class="service-arrow">↗</div>
+        <div class="service-name">dash.lehn.dev</div>
+        <div class="service-desc">Homelab dashboard. Status, links, metrics.</div>
+      </a>
+
+      <a href="https://print.lehn.dev" class="service-card">
+        <div class="service-arrow">↗</div>
+        <div class="service-name">print.lehn.dev</div>
+        <div class="service-desc">OctoPrint / Mainsail 3D printer control.</div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ─── projects ─────────────────────────────────────── -->
+  <section id="projects">
+    <div class="section-header">
+      <span class="section-label">02</span>
+      <h2>// projects</h2>
+    </div>
+    <div class="projects-list">
+
+      <!--
+        To add a project photo, put a WebP in /assets/img/projects/
+        and add an <img> tag like:
+          <img src="/assets/img/projects/voron.webp" alt="Voron enclosure" class="project-img">
+        Place it between the .project-tag and .project-content divs.
+      -->
+
+      <div class="project-item">
+        <span class="project-tag">3d print</span>
+        <div class="project-content">
+          <div class="project-name">custom enclosure mods</div>
+          <div class="project-desc">Printed toolhead mounts, cable chains, and a full electronics bay enclosure for my Voron build. Parametric CAD, designed in FreeCAD.</div>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <span class="project-tag">lego</span>
+        <div class="project-content">
+          <div class="project-name">sorting machine mk. ii</div>
+          <div class="project-desc">Conveyor-fed color + shape sorter using LEGO Technic motors and a Raspberry Pi for computer vision classification. ~4,000 bricks sorted.</div>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <span class="project-tag">homelab</span>
+        <div class="project-content">
+          <div class="project-name">k3s cluster on old thinkpads</div>
+          <div class="project-desc">Three-node Kubernetes cluster running on decommissioned ThinkPad T480s. GitOps via Flux, Longhorn for storage, Traefik ingress.</div>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <span class="project-tag">software</span>
+        <div class="project-content">
+          <div class="project-name">this site</div>
+          <div class="project-desc">Static HTML/CSS homepage. No frameworks, no build steps. Served via Cloudflare Worker from GitHub.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── about / résumé ───────────────────────────────── -->
+  <section id="about">
+    <div class="section-header">
+      <span class="section-label">03</span>
+      <h2>// about &amp; résumé</h2>
+    </div>
+    <div class="about-grid">
+
+      <div class="about-cell" style="grid-column: 1 / -1;">
+        <div class="about-cell-label">summary</div>
+        <div class="about-cell-content">
+          <strong>Your name here.</strong> I do [your thing] — currently working at /
+          studying / building [X]. I care about owning my own infrastructure, making
+          physical things, and writing software that stays understandable.
+        </div>
+      </div>
+
+      <div class="about-cell">
+        <div class="about-cell-label">experience</div>
+        <div class="about-cell-content">
+          <strong>Company / Role</strong> — 20XX–present<br>
+          What you did. Keep it punchy.<br><br>
+          <strong>Previous Role</strong> — 20XX–20XX<br>
+          One or two lines is plenty.
+        </div>
+      </div>
+
+      <div class="about-cell">
+        <div class="about-cell-label">education</div>
+        <div class="about-cell-content">
+          <strong>Degree or cert</strong><br>
+          School / program name<br>
+          Year
+        </div>
+      </div>
+
+      <div class="about-cell" style="grid-column: 1 / -1;">
+        <div class="about-cell-label">skills &amp; tools</div>
+        <ul class="skill-list">
+          <li>Linux</li>
+          <li>Docker</li>
+          <li>Kubernetes</li>
+          <li>Python</li>
+          <li>Bash</li>
+          <li>Git</li>
+          <li>FreeCAD</li>
+          <li>PrusaSlicer</li>
+          <li>LEGO Technic</li>
+          <li>Raspberry Pi</li>
+          <li>Nginx</li>
+          <li>Traefik</li>
+          <li>Ansible</li>
+          <li>HTML/CSS</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── footer / contact ─────────────────────────────── -->
+  <footer id="contact">
+    <div class="footer-inner">
+      <div class="footer-contact">
+        <a href="mailto:you@lehn.dev">you@lehn.dev</a>
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">github</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">linkedin</a>
+      </div>
+      <div class="footer-copy">lehn.dev &mdash; <span id="year"></span></div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="/js/main.js"></script>
+</body>
+</html>

@@ -117,7 +117,7 @@ h1 {
   font-weight: 300;
   line-height: 1.1;
   letter-spacing: -0.02em;
-  color: var(--text);
+  color: var(--accent);
   margin-bottom: 1.75rem;
 }
 
@@ -233,7 +233,7 @@ h2 {
 .service-name {
   font-family: var(--mono);
   font-size: 0.85rem;
-  color: var(--text);
+  color: var(--accent);
   margin-bottom: 0.35rem;
   letter-spacing: 0.02em;
 }
@@ -250,7 +250,7 @@ h2 {
   right: 1.5rem;
   font-family: var(--mono);
   font-size: 0.75rem;
-  color: var(--accent);
+  color: var(--accent2);
   opacity: 0;
   transform: translate(-4px, 4px);
   transition: opacity 0.15s, transform 0.15s;

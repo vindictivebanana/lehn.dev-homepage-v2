@@ -35,24 +35,6 @@ lehn.dev/
   </div>
 </div>
 ```
-
-## Deploying
-
-```bash
-npm install
-npm run deploy
-```
-
-First deploy: make sure your domain is pointed to Cloudflare and you've run
-`wrangler login` first.
-
-## Local dev
-
-```bash
-npm run dev
-# → http://localhost:8787
-```
-
 ## Customising
 
 All design tokens (colors, fonts) live in `css/style.css` under `:root`.

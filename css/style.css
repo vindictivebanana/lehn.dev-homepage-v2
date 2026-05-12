@@ -41,7 +41,6 @@ body::before {
 /* ─── layout ─────────────────────────────────────────── */
 
 .container {
-  max-width: 780px;
   margin: 0 auto;
   padding: 0 2rem;
   position: relative;

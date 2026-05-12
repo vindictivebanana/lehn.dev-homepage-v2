@@ -1,4 +1,4 @@
-name = "lehn-dev"
+name = "lehn-dev-homepage-v2"
 main = "worker/index.js"
 compatibility_date = "2024-01-01"
 

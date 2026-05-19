@@ -151,25 +151,25 @@ h1 span { color: var(--accent); }
 }
 
 .btn-primary {
-  background: var(--accent);
+  background: var(--accent2);
   color: #0b0b0b;
-  border-color: var(--accent);
+  border-color: var(--accent2);
 }
 
 .btn-primary:hover {
-  background: var(--accent2);
-  border-color: var(--accent2);
+  background: var(--accent);
+  border-color: var(--accent);
 }
 
 .btn-ghost {
   background: transparent;
-  color: var(--muted);
+  color: var(--accent);
   border-color: var(--border2);
 }
 
 .btn-ghost:hover {
   color: var(--text);
-  border-color: var(--muted2);
+  border-color: var(--accent2);
 }
 
 /* ─── sections (shared) ───────────────────────────────── */

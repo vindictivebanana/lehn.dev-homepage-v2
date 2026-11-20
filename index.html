@@ -3,112 +3,151 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>lehn.dev</title>
+  <title>Henry Lehn — lehn.dev</title>
 
-  <!-- open graph / social preview -->
-  <meta property="og:title" content="lehn.dev">
-  <meta property="og:description" content="Maker. Builder. Engineer.">
-  <meta property="og:image" content="/assets/img/og-image.png">
-  <meta property="og:url" content="https://lehn.dev">
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Henry Lehn — lehn.dev">
+  <meta property="og:description" content="Henry Lehn's portfolio and résumé.">
+  <meta property="og:image" content="assets/img/og-image.png">
+  <meta property="og:url" content="https://www.lehn.dev">
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- fonts -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400&display=swap"
+    rel="stylesheet"
+  >
 
-  <!-- styles -->
-  <link rel="icon" href="/assets/img/projects/logo-square.png">
-  <link rel="stylesheet" href="/css/style.css">
+  <!-- Styles -->
+  <link rel="icon" href="assets/img/projects/logo-square.png">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <div class="container">
 
   <nav>
-    <a href="/" class="nav-logo"><img src="/assets/img/projects/logo.svg" alt="lehn.dev" style="height: 20px;"></a>
+    <a href="/" class="nav-logo">
+      <img src="assets/img/projects/logo.svg" alt="lehn.dev" style="height: 20px;">
+    </a>
     <ul class="nav-links">
-      <li><a href="/services">services</a></li>
-      <li><a href="/project">projects</a></li>
+      <li><a href="#work">services</a></li>
+      <li><a href="projects/index.html">projects</a></li>
       <li><a href="#about">about</a></li>
       <li><a href="#contact">contact</a></li>
     </ul>
   </nav>
 
-  <!-------hero------->
-  <div class="hero">
-    <h1>maker<br>builder<br><span>engineer</span></h1>
-    <p class="hero-bio">
-      I build things with whatever I can get my hands on. Self-hosting infrastructure, physical projects, and anything else interesting.
-      Based wherever my 3D printer is.
-    </p>
-    <div class="hero-cta">
-      <a href="/project" class="btn btn-primary">view projects</a>
-      <a href="/services" class="btn btn-ghost">see services</a>
-    </div>
-  </div>
+  <main>
+    <!-- Introduction -->
+    <section class="hero" aria-labelledby="intro-heading">
+      <h1 id="intro-heading">Henry<br><span>Lehn</span></h1>
+      <p class="hero-bio">
+        Student at Bullis School interested in engineering, software, and
+        technology. I work on projects involving Linux, networking, hardware,
+        and design.
+      </p>
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-primary">view my work</a>
+        <a href="#about" class="btn btn-ghost">about me</a>
+      </div>
+    </section>
 
-  <!-------about / résumé------->
-  <section id="about">
-    <div class="section-header">
-      <span class="section-label">03</span>
-      <h2>// about &amp; résumé</h2>
-    </div>
-    <div class="about-grid">
+    <!-- Featured projects -->
+    <section id="work">
+      <div class="section-header">
+        <span class="section-label">01</span>
+        <h2>// selected work</h2>
+      </div>
 
-      <div class="about-cell" style="grid-column: 1 / -1;">
-        <div class="about-cell-label">summary</div>
-        <div class="about-cell-content">
-          <strong>Henry Lehn</strong> I do engineering design/construction, computer hardware, simple IT support, networking infrastructure, and many other things. Currently studying at the Bullis School. I care about owning my own data, making
-          useful gadgets, and writing software that stays understandable.
+      <div class="projects-grid">
+        <a class="project-card" href="/project">
+          <div class="project-card-title">Project name</div>
+          <p>A short description of what you made and what it does.</p>
+          <span class="project-card-link">view projects →</span>
+        </a>
+
+        <a class="project-card" href="/project">
+          <div class="project-card-title">Project name</div>
+          <p>Briefly describe the project, its purpose, or how you built it.</p>
+          <span class="project-card-link">view projects →</span>
+        </a>
+
+        <a class="project-card" href="/project">
+          <div class="project-card-title">Project name</div>
+          <p>Share one useful detail about the project or its outcome.</p>
+          <span class="project-card-link">view projects →</span>
+        </a>
+      </div>
+
+      <div class="hero-cta">
+        <a href="/project" class="btn btn-ghost">see all projects</a>
+      </div>
+    </section>
+
+    <!-- About / résumé -->
+    <section id="about">
+      <div class="section-header">
+        <span class="section-label">02</span>
+        <h2>// about &amp; résumé</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-cell" style="grid-column: 1 / -1;">
+          <div class="about-cell-label">summary</div>
+          <div class="about-cell-content">
+            <strong>Henry Lehn</strong> I work on engineering design and
+            construction, computer hardware, IT support, networking
+            infrastructure, and software. I care about owning my own data,
+            making useful gadgets, and writing software that stays
+            understandable.
+          </div>
+        </div>
+
+        <div class="about-cell">
+          <div class="about-cell-label">experience</div>
+          <div class="about-cell-content">
+            Add your work, volunteer, or project experience here.
+          </div>
+        </div>
+
+        <div class="about-cell">
+          <div class="about-cell-label">education</div>
+          <div class="about-cell-content">
+            <strong>Bullis School</strong><br>
+            Potomac, MD<br>
+            Class of 2028
+          </div>
+        </div>
+
+        <div class="about-cell" style="grid-column: 1 / -1;">
+          <div class="about-cell-label">skills &amp; tools</div>
+          <ul class="skill-list">
+            <li>Linux</li>
+            <li>Docker</li>
+            <li>Python</li>
+            <li>Bash</li>
+            <li>Git</li>
+            <li>OnShape</li>
+            <li>PrusaSlicer</li>
+            <li>LEGO Technic</li>
+            <li>Raspberry Pi</li>
+            <li>HTML/CSS</li>
+          </ul>
         </div>
       </div>
+    </section>
+  </main>
 
-      <div class="about-cell">
-        <div class="about-cell-label">experience</div>
-        <div class="about-cell-content">
-          <strong>--</strong>--<br>
-          --<br><br>
-          <strong>--</strong>--<br>
-          --
-        </div>
-      </div>
-
-      <div class="about-cell">
-        <div class="about-cell-label">education</div>
-        <div class="about-cell-content">
-          <strong>Bullis School</strong><br>
-          Potomac, MD<br>
-          Class of 2028
-        </div>
-      </div>
-
-      <div class="about-cell" style="grid-column: 1 / -1;">
-        <div class="about-cell-label">skills &amp; tools</div>
-        <ul class="skill-list">
-          <li>Linux</li>
-          <li>Docker</li>
-          <li>Python</li>
-          <li>Bash</li>
-          <li>Git</li>
-          <li>OnShape</li>
-          <li>PrusaSlicer</li>
-          <li>LEGO Technic</li>
-          <li>Raspberry Pi</li>
-          <li>HTML/CSS</li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-  <!-------footer / contact------->
+  <!-- Contact -->
   <footer id="contact">
     <div class="footer-inner">
       <div class="footer-contact">
         <a href="mailto:contact@lehn.dev">contact@lehn.dev</a>
-        <a href="https://github.com/vindictivebanana" target="_blank" rel="noopener">github</a>
-       <!-- <a href="https://linkedin.com/in/" target="_blank" rel="noopener">linkedin</a> -->
-	<!--add LinkedIn username after "in/..." for future use-->
+        <a href="https://github.com/vindictivebanana" target="_blank" rel="noopener noreferrer">
+          github
+        </a>
       </div>
       <div class="footer-copy">lehn.dev &mdash; <span id="year"></span></div>
     </div>
